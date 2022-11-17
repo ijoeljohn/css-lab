@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_lab5</title>
+    <style>
+        body{
+            background-color: rgb(60, 60, 60);
+            margin: 30px; 
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height:20px;
+            background-color: white;
+            border: 1px solid;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .dot{
+            
+            margin: 4px;
+            height: 9px;
+            width:9px;
+            border-radius: 50%;
+            display: inline-block
+        }
+        .left{
+            background-color: rgb(0, 0, 0);
+            width: 700px ;
+            display: inline-block;
+            border: 0;
+            position: relative;
+
+           
+        } 
+        .right{
+            background-color: rgb(0, 156, 119);
+            display:inline-block;
+            width: 458px;
+            border: 0;
+            border-collapse: collapse;
+            position: absolute;
+            
+        }
+        .img{
+            height: 40px;
+            width: 140px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+        .h1{
+            color: aliceblue;
+            font-style: normal;
+            font-weight: 150;
+            margin-left: 60px;
+            margin-top: 70px;
+            margin-bottom: 0;
+        }
+        .h5{
+            color: rgb(118, 118, 118);
+            margin-left: 60px;
+            font-weight: lighter;
+            font-style:normal;
+            margin-top: 0px;
+        }
+        .p{
+            color:rgb(118, 118, 118);
+            margin-left: 60px;
+            margin-right: 50px;
+        }
+        .button{
+            background-color: rgb(0, 156, 119);
+            color: azure;
+            height: 35px;
+            width: 150px;
+            padding: 8px;
+            margin-left: 60px;
+            margin-top: 8px;
+            border-radius: 3px; 
+            margin-bottom: 90px;
+            border: 0;
+        }
+        .bottom a {
+            border:0.5px solid;
+            color:rgb(118, 118, 118);
+            padding: 10px;
+            margin: 0 0.8px;
+            border-style: hidden;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: small;
+           
+        }
+        .bottom{
+            padding-bottom: 40px;
+            margin-left: 60px;
+        }
+        .h3{
+            margin-top: 200px;
+            margin-left: 50px;
+            border-collapse: collapse;
+           font-style: normal;
+           font-weight: lighter;
+           color: aliceblue;
+        }
+        .email{
+            margin-left: 50px;
+            display: block;
+            margin-top: 5px;
+            background-color: rgb(0, 156, 119);
+            color: aliceblue;
+            padding: 5px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+           
+        }
+        .password{
+            margin-left: 50px;
+            margin-top: 9px;
+            display: block;
+            background-color: rgb(0, 156, 119);
+            color: aliceblue;
+            padding: 5px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+        .login{
+            margin-left: 50px;
+            margin-top: 24px;
+            margin-bottom: 162px;
+            background-color: aliceblue;
+            color: rgb(0, 156, 119) ;
+            border: 0;
+            width: 100px;
+            height: 33px;
+            border-radius: 3px;
+            margin-right: 20px;
+        }
+        .link{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" style="color: white;">
+        <span class="dot" style="background-color:red ;"></span>
+        <span class="dot" style="background-color:yellow ;"></span>
+        <span class="dot" style="background-color:green ;"></span>
+    </div>
+    
+    <div class="left">
+    <img src="index.png" alt="european council" class="img" >
+    <h1  class="h1">Welcome</h1>
+    <h3 class="h5">Register for an ERC account here</h3>
+    <p  class="p">Register for an ERC account here and get access to the webshop.academy and MyERC membership
+        portal.Nations of life-savers, communities with the readiness to respond to cardiac arrest.
+         This is the vision of the future. The goal of the ERC.
+          To achieve this, we need training and education. To know what to teach we need guidelines.
+           To have good evidence-based guidelines, we need science. 
+          
+    </p>
+    <button class="button">REGISTER HERE</button>
+  
+    <div class="bottom">
+        <select style="color:rgb(118, 118, 118);border-style: hidden; background-color: black; font-style: normal;
+        font-weight:normal;
+        font-size:12px;
+       ">
+            <option value="1" selected>CHOOSE LANGUAGE</option>
+            <option value="2">2</option>
+        </select>
+        <a href="#" style="text-decoration: none;">HELP CENTER</a>
+        <a href="#" style="text-decoration: none;">ERC WEBSITE</a>
+        <a href="#" style="text-decoration: none;">ERC WEBSHOP</a>
+    </div>
+    </div>
+
+    <div class="right">
+        <h3 class="h3">Or login to your account </h3>
+        <input type="text" placeholder="Your email" class="email" size="45">
+        <input type="text" placeholder="Password" class="password" size="45">
+        <button class="login">LOGIN</button>
+        <a href="#" class="link">Forgot Password?</a>
+    </div>
+    
+</body>
+</html>
